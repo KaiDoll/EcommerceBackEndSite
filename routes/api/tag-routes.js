@@ -4,8 +4,7 @@ const { Tag, Product, ProductTag } = require('../../models');
 // The `/api/tags` endpoint
 
 router.get('/', async (req, res) => {
-  // find all tags
-  // be sure to include its associated Product data
+ // finds all tags as well as its association with Products data through ProductTag.
   try {
     const tagData = await Tag.findAll({
       include: [{  model: Product, through: ProductTag}]
@@ -17,8 +16,7 @@ router.get('/', async (req, res) => {
 });
 
 router.get('/:id', async (req, res) => {
-  // find a single tag by its `id`
-  // be sure to include its associated Product data
+//finds categories using its ID as well as its association with Products data through ProductTag.
   try {
     const tagData = await Tag.findByPk(req.params.id, {
       include: [{ model:Product, through: ProductTag }]
@@ -33,6 +31,7 @@ router.get('/:id', async (req, res) => {
     res.status(500).json(err);
   }
 });
+//if it is not a tag data then message will display. If success than great or else it will catch and send status 500.
 
 router.post('/', async (req, res) => {
   // create a new tag

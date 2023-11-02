@@ -5,8 +5,7 @@ const { Product, Category, Tag, ProductTag } = require('../../models');
 
 // get all products
 router.get('/',  async (req, res) => {
-  // find all products
-  // be sure to include its associated Category and Tag data
+  // finds all products as well as its association with Category and Tag through ProductTag.
   try {
     const productData = await Product.findAll({
       include: [{ model: Category }, { model: Tag, through: ProductTag}]
@@ -19,8 +18,7 @@ router.get('/',  async (req, res) => {
 
 // get one product
 router.get('/:id', async (req, res) => {
-  // find a single product by its `id`
-  // be sure to include its associated Category and Tag data
+//finds categories using its ID as well as its association with Category and Tag through ProductTag.
   try {
     const productData = await Product.findByPk(req.params.id, {
       include: [{ model: Category }, { model: Tag, through: ProductTag }]
@@ -34,6 +32,8 @@ router.get('/:id', async (req, res) => {
     res.status(500).json(err)
   }
 });
+//if it is not a product data then message will display. If success than great or else it will catch and send status 500.
+
 
 // create new product
 router.post('/', async (req, res) => {
@@ -75,7 +75,7 @@ res.status(400).json(err);
 
 // update product
 router.put('/:id', (req, res) => {
-  // update product data CHECK THIS CODE
+  // update product data
   Product.update(req.body, {
     where: {
       id: req.params.id,

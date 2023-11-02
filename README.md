@@ -25,26 +25,43 @@ Mysql
 ## Usage 
 To test out a successfully API route using Thundercloud by editting the route files. Once updated, Thundercloud will be able to view(GET), create(POST), update(PUT), and delete data in my database.
 
-![Option to add, view, or update](image.png)
+<img src="./images/getCategories.png" alt= "GET Categories" height="300">
 
-![View department and role table](image-1.png)
+<img src="./images/getCategoriesID.png" alt= "GET Categories by ID" height="270">
 
-![View Employee table](image-2.png)
+<img src="./images/postCategories.png" alt= "POST Categories" height="270">
 
-![Add new employee to the database](image-3.png)
+<img src="./images/putCategories.png" alt= "PUT Categories" height="270">
 
-![Add new dept & role to the database](image-4.png)
+<img src="./images/deleteCategories.png" alt= "DELETE Categories" height="270">
 
-![Update employee in the database](image-5.png)
+<img src="./images/getProducts.png" alt= "GET Products" height="270">
 
-![New table with all the changes](image-6.png)
+<img src="./images/getProductsID.png" alt= "GET Products by ID" height="270">
+
+<img src="./images/postProduct.png" alt= "POST Products" height="270">
+
+<img src="./images/putProduct.png" alt= "PUT Products" height="270">
+
+<img src="./images/deleteProduct.png" alt= "DELETE Products" height="270">
+
+<img src="./images/getTags.png" alt= "GET Tags" height="270">
+
+<img src="./images/getTagsID.png" alt= "GET Tags by ID" height="270">
+
+<img src="./images/postTag.png" alt= "POST Tags" height="270">
+
+<img src="./images/putTag.png" alt= "PUT Tags" height="270">
+
+<img src="./images/deleteTag.png" alt= "DELETE Tags" height="270">
+
 ## License
   
 Read about your license MIT
 
  ## Links 
-GitHub page: https://github.com/KaiDoll/EmployeeTracker 
-Walkthrough video: https://drive.google.com/file/d/1Y87OlBbtwojxbMfyKDCyTaw5zvlL0foj/view?usp=sharing  
+GitHub page: https://github.com/KaiDoll/EcommerceBackEndSite 
+Walkthrough video: https://drive.google.com/file/d/1VI-nWogbKl2kejWMz-Z3WwDGo2qAEGWX/view?usp=sharing   
 
  ## Github 
 Username: KaiDoll
